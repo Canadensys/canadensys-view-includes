@@ -1,6 +1,6 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-	<title>${ltext("page.title")}</title>
+	<title><#if page.title??>${ltext("page.title")}</#if></title>
 	<link rel="stylesheet" href="http://data.canadensys.net/common/styles/common.css" media="screen"/>
 	<link rel="shortcut icon" href="http://data.canadensys.net/common/images/favicon.png"/>
 <#-- Add additional CSS if needed -->
@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="${css}" media="screen"/>
 	</#list>
 </#if>
-<#if root.gaAccount??>
+<#if site.ga.account??>
 	<meta name="google-site-verification" content="${site.ga.siteVerification}"/>
 	<script type="text/javascript">
 	var _gaq = _gaq || [];
