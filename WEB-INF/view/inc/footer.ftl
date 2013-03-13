@@ -18,6 +18,8 @@
 		</div>
 	</div>
 </div>
+</body>
+</html>
 
 <!-- JavaScript handling -->
 <#if javaScriptIncludeList??>

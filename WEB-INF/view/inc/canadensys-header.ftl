@@ -1,3 +1,4 @@
+<body>
 <div id="header">
 	<div id="header_content">
 		<div id="nav_top"><a href="${(root.site.languageSwitcherURL)??}">${rc.getMessage("header.language.otherlanguage")}</a></div>
