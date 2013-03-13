@@ -1,16 +1,17 @@
 <div id="header">
 	<div id="header_content">
-		<div id="nav_top"><a href="${root.languageSwitcherURL}">${ltext("header.language.otherlanguage")}</a></div>
-		<div id="nav_title" class="png"><a href="${ltext("header.title.url")}">${ltext("header.title")}</a></div>
-		<div id="nav_portal"><span class="selected">${ltext("header.data")}</span> | <a href="${ltext("header.community.url")}">${ltext("header.community")}</a></div>
+		<div id="nav_top"><a href="${(root.site.languageSwitcherURL)??}">${rc.getMessage("header.language.otherlanguage")}</a></div>
+		<div id="nav_title" class="png"><a href="${rc.getMessage("header.title.url")}">${rc.getMessage("header.title")}</a></div>
+		<div id="nav_portal"><span class="selected">${rc.getMessage("header.data")}</span> | <a href="${rc.getMessage("header.community.url")}">${rc.getMessage("header.community")}</a></div>
 	</div>
 	<div id="menu">
+		<assign currentApp = ${rc.getContextPath()?replace("/", "")}/>
 		<ul>
 			<li class="menu_first">&nbsp;</li>
-			<li class="page_item current_page_item"><a href="${ltext("header.menu.occportal.url")}">${ltext("header.menu.occportal")}</a></li>	
-			<li><a href="${ltext("header.menu.ipt.url")}">${ltext("header.menu.ipt")}</a></li>
-			<li><a href="${ltext("header.menu.tools.url")}">${ltext("header.menu.tools")}</a></li>
-			<li><a href="${ltext("header.menu.vascan.url")}">${ltext("header.menu.vascan")}</a></li>
+			<li<#if (page.currentApp == "explorer")??>class="page_item current_page_item"</if>><a href="${rc.getMessage("header.menu.occportal.url")}">${rc.getMessage("header.menu.occportal")}</a></li>	
+			<li><#if (page.currentApp == "ipt")??>class="page_item current_page_item"</if>><a href="${rc.getMessage("header.menu.ipt.url")}">${rc.getMessage("header.menu.ipt")}</a></li>
+			<li><#if (page.currentApp == "tools" || page.currentApp =="narwhal-api")??>class="page_item current_page_item"</if>><a href="${rc.getMessage("header.menu.tools.url")}">${rc.getMessage("header.menu.tools")}</a></li>
+			<li><#if (page.currentApp == "vascan")??>class="page_item current_page_item"</if>><a href="${rc.getMessage("header.menu.vascan.url")}">${rc.getMessage("header.menu.vascan")}</a></li>
 			<li class="menu_last">&nbsp;</li>
 		</ul>  
 	</div>
