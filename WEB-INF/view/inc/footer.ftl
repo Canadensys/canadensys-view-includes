@@ -1,19 +1,19 @@
 <div id="footer">
 	<div id="footer_content">
 		<div class="footer_section left">
-			<a id="cc0" class="cc_logo" href="${ltext("footer.cc0.url")}" title="${ltext("footer.cc0.title")}">&nbsp;</a>
-			<p>${ltext("footer.cc0.description")}</p>
+			<a id="cc0" class="cc_logo" href="${ltext("viewinclude.footer.cc0.url")}" title="${ltext("viewinclude.footer.cc0.title")}">&nbsp;</a>
+			<p>${ltext("viewinclude.footer.cc0.description")}</p>
 			<ul>
-				<li><a href="${ltext("footer.norms.url")}">${ltext("footer.norms")}</a></li>
-				<li><a href="${ltext("footer.ipt.url")}">${ltext("footer.ipt")}</a></li>
+				<li><a href="${ltext("viewinclude.footer.norms.url")}">${ltext("viewinclude.footer.norms")}</a></li>
+				<li><a href="${ltext("viewinclude.footer.ipt.url")}">${ltext("viewinclude.footer.ipt")}</a></li>
 			</ul>
 		</div>
 		<div class="footer_section right">
-			<a rel="license" id="cc_by" class="cc_logo" href="${ltext("footer.ccby.url")}" title="${ltext("footer.ccby.title")}">&nbsp;</a>
-			<p>${ltext("footer.ccby.description")}</p>
+			<a rel="license" id="cc_by" class="cc_logo" href="${ltext("viewinclude.footer.ccby.url")}" title="${ltext("viewinclude.footer.ccby.title")}">&nbsp;</a>
+			<p>${ltext("viewinclude.footer.ccby.description")}</p>
 			<ul>
-				<li><a href="${ltext("footer.about.url")}">${ltext("footer.about")}</a></li>
-				<li><a href="${ltext("footer.contact.url")}">${ltext("footer.contact")}</a></li>
+				<li><a href="${ltext("viewinclude.footer.about.url")}">${ltext("viewinclude.footer.about")}</a></li>
+				<li><a href="${ltext("viewinclude.footer.contact.url")}">${ltext("viewinclude.footer.contact")}</a></li>
 			</ul>
 		</div>
 	</div>
