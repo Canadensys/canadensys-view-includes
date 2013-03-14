@@ -23,7 +23,7 @@
 
 <!-- JavaScript handling -->
 <#if (page.javaScriptIncludeList)??>
-	<#list javaScriptIncludeList as jsFile>
+	<#list page.javaScriptIncludeList as jsFile>
 	<script type="text/javascript" src="${jsFile}"></script>
 	</#list>
 </#if>
