@@ -30,14 +30,14 @@
 
 <#if (page.javaScriptSetupCallList)?? || (page.jQueryJavaScriptSetupCallList)??>
 	<script type="text/javascript">
-		<#if (page.jQueryJavaScriptSetupCallList)??>
-			<#list page.jQueryJavaScriptSetupCallList as jsCall>
+		<#if (page.javaScriptSetupCallList)??>
+			<#list page.javaScriptSetupCallList as jsCall>
 				${jsCall};
 			</#list>
 		</#if>
-		<#if (page.javaScriptSetupCallList)??>
+		<#if (page.jQueryJavaScriptSetupCallList)??>
 			$(document).ready(function() {
-			<#list page.javaScriptSetupCallList as jsCall>
+			<#list page.jQueryJavaScriptSetupCallList as jsCall>
 				${jsCall};
 			</#list>
 		</#if>
