@@ -1,19 +1,19 @@
 <div id="footer">
 	<div id="footer_content">
 		<div class="footer_section left">
-			<a id="cc0" class="cc_logo" href="${ltext("viewinclude.footer.cc0.url")}" title="${ltext("viewinclude.footer.cc0.title")}">&nbsp;</a>
-			<p>${ltext("viewinclude.footer.cc0.description")}</p>
+			<a id="cc0" class="cc_logo" href="${rc.getMessage("viewinclude.footer.cc0.url")}" title="${rc.getMessage("viewinclude.footer.cc0.title")}">&nbsp;</a>
+			<p>${rc.getMessage("viewinclude.footer.cc0.description")}</p>
 			<ul>
-				<li><a href="${ltext("viewinclude.footer.norms.url")}">${ltext("viewinclude.footer.norms")}</a></li>
-				<li><a href="${ltext("viewinclude.footer.ipt.url")}">${ltext("viewinclude.footer.ipt")}</a></li>
+				<li><a href="${rc.getMessage("viewinclude.footer.norms.url")}">${rc.getMessage("viewinclude.footer.norms")}</a></li>
+				<li><a href="${rc.getMessage("viewinclude.footer.ipt.url")}">${rc.getMessage("viewinclude.footer.ipt")}</a></li>
 			</ul>
 		</div>
 		<div class="footer_section right">
-			<a rel="license" id="cc_by" class="cc_logo" href="${ltext("viewinclude.footer.ccby.url")}" title="${ltext("viewinclude.footer.ccby.title")}">&nbsp;</a>
-			<p>${ltext("viewinclude.footer.ccby.description")}</p>
+			<a rel="license" id="cc_by" class="cc_logo" href="${rc.getMessage("viewinclude.footer.ccby.url")}" title="${rc.getMessage("viewinclude.footer.ccby.title")}">&nbsp;</a>
+			<p>${rc.getMessage("viewinclude.footer.ccby.description")}</p>
 			<ul>
-				<li><a href="${ltext("viewinclude.footer.about.url")}">${ltext("viewinclude.footer.about")}</a></li>
-				<li><a href="${ltext("viewinclude.footer.contact.url")}">${ltext("viewinclude.footer.contact")}</a></li>
+				<li><a href="${rc.getMessage("viewinclude.footer.about.url")}">${rc.getMessage("viewinclude.footer.about")}</a></li>
+				<li><a href="${rc.getMessage("viewinclude.footer.contact.url")}">${rc.getMessage("viewinclude.footer.contact")}</a></li>
 			</ul>
 		</div>
 	</div>
@@ -22,23 +22,25 @@
 </html>
 
 <!-- JavaScript handling -->
-<#if javaScriptIncludeList??>
+<#if (page.javaScriptIncludeList)??>
 	<#list javaScriptIncludeList as jsFile>
 	<script type="text/javascript" src="${jsFile}"></script>
 	</#list>
 </#if>
 
-<#if javaScriptSetupCallList??>
+<#if (page.javaScriptSetupCallList)?? || (page.jQueryJavaScriptSetupCallList)??>
 	<script type="text/javascript">
-		<#if nojQueryJSSetupCallList??>
-			<#list nojQueryJSSetupCallList as jsCall>
-			${jsCall};
+		<#if (page.jQueryJavaScriptSetupCallList)??>
+			<#list page.jQueryJavaScriptSetupCallList as jsCall>
+				${jsCall};
 			</#list>
 		</#if>
-		$(document).ready(function() {
-			<#list javaScriptSetupCallList as jsCall>
-			${jsCall};
+		<#if (page.javaScriptSetupCallList)??>
+			$(document).ready(function() {
+			<#list page.javaScriptSetupCallList as jsCall>
+				${jsCall};
 			</#list>
+		</#if>
 		});
 	</script>
 </#if>
