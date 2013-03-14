@@ -22,21 +22,21 @@
 </html>
 
 <!-- JavaScript handling -->
-<#if javaScriptIncludeList??>
-	<#list javaScriptIncludeList as jsFile>
+<#if page.javaScriptIncludeList??>
+	<#list page.javaScriptIncludeList as jsFile>
 	<script type="text/javascript" src="${jsFile}"></script>
 	</#list>
 </#if>
 
-<#if javaScriptSetupCallList??>
+<#if page.javaScriptSetupCallList??>
 	<script type="text/javascript">
-		<#if nojQueryJSSetupCallList??>
-			<#list nojQueryJSSetupCallList as jsCall>
+		<#if page.jQueryJavaScriptSetupCallList??>
+			<#list page.jQueryJavaScriptSetupCallList as jsCall>
 			${jsCall};
 			</#list>
 		</#if>
 		$(document).ready(function() {
-			<#list javaScriptSetupCallList as jsCall>
+			<#list page.javaScriptSetupCallList as jsCall>
 			${jsCall};
 			</#list>
 		});
