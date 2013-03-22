@@ -20,8 +20,7 @@
 </div>
 </body>
 </html>
-
-<!-- JavaScript handling -->
+<#-- JavaScript handling -->
 <#if (page.javaScriptIncludeList)??>
 	<#list page.javaScriptIncludeList as jsFile>
 	<script type="text/javascript" src="${jsFile}"></script>
