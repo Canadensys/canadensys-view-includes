@@ -25,3 +25,4 @@
 	</script>
 </#if>
 </head>
+<body>

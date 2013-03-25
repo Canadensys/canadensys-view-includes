@@ -1,4 +1,3 @@
-<body>
 <div id="header">
 	<div id="header_content">
 <#-- This is only valid for 2 languages -->
