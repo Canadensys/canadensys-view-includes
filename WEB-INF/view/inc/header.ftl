@@ -11,6 +11,12 @@
 	<link rel="stylesheet" href="${css}" media="screen"/>
 	</#list>
 </#if>
+<#if (page.prefetchList)??>
+	<#list page.prefetchList as pre>
+	<link rel="dns-prefetch" href="${pre}"/>
+	<link rel="prefetch" href="${pre}"/>
+	</#list>
+</#if>
 <#if gaAccount?? && gaAccount?has_content>
 	<meta name="google-site-verification" content="${gaSiteVerification}"/>
 	<script type="text/javascript">

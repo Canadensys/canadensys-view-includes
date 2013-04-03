@@ -18,8 +18,6 @@
 		</div>
 	</div>
 </div>
-</body>
-</html>
 <#-- JavaScript handling -->
 <#if (page.javaScriptIncludeList)??>
 	<#list page.javaScriptIncludeList as jsFile>
@@ -43,3 +41,5 @@
 		});
 	</script>
 </#if>
+</body>
+</html>
