@@ -21,25 +21,25 @@
 <#-- JavaScript handling -->
 <#if (page.javaScriptIncludeList)??>
 	<#list page.javaScriptIncludeList as jsFile>
-	<script type="text/javascript" src="${jsFile}"></script>
+<script type="text/javascript" src="${jsFile}"></script>
 	</#list>
 </#if>
 
 <#if (page.javaScriptSetupCallList)?? || (page.jQueryJavaScriptSetupCallList)??>
-	<script type="text/javascript">
-		<#if (page.javaScriptSetupCallList)??>
-			<#list page.javaScriptSetupCallList as jsCall>
-				${jsCall};
-			</#list>
-		</#if>
-		<#if (page.jQueryJavaScriptSetupCallList)??>
-			$(document).ready(function() {
-			<#list page.jQueryJavaScriptSetupCallList as jsCall>
-				${jsCall};
-			</#list>
-		</#if>
-		});
-	</script>
+<script type="text/javascript">
+<#if (page.javaScriptSetupCallList)??>
+	<#list page.javaScriptSetupCallList as jsCall>
+${jsCall};
+	</#list>
+</#if>
+<#if (page.jQueryJavaScriptSetupCallList)??>
+	$(document).ready(function() {
+	<#list page.jQueryJavaScriptSetupCallList as jsCall>
+		${jsCall};
+	</#list>
+</#if>
+	});
+</script>
 </#if>
 </body>
 </html>

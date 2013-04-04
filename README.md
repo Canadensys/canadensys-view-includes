@@ -8,8 +8,12 @@ The other variables must be sent to the FTL templates by the Java Servlet or set
 header.ftl
 * page.title : title to use in <title> tag
 * page.cssList : Freemarker sequence of CSS to include
+* page.prefetchList : dns-prefetch and prefetch tags
 * gaAccount : Google Analytics account
 * gaSiteVerification : Google Analytics site verification
+
+canadensys-header.ftl
+* URLHelper : reference to net.canadensys.web.FreemarkerURLHelper
 
 footer.ftl
 * page.javaScriptIncludeList : Java Script file(s) to include

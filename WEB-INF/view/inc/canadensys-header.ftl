@@ -6,8 +6,7 @@
 <#else>
 	<#assign otherLang = "en"/>
 </#if>
-<#-- The built URL will not keep the query strings -->
-		<div id="nav_top"><a href="${rc.requestUri}?lang=${otherLang}">${rc.getMessage("viewinclude.header.language.otherlanguage")}</a></div>
+		<div id="nav_top"><a href="${URLHelper.getURL(Request,"lang",otherLang)}">${rc.getMessage("viewinclude.header.language.otherlanguage")}</a></div>
 		<div id="nav_title" class="png"><a href="${rc.getMessage("viewinclude.header.title.url")}">${rc.getMessage("viewinclude.header.title")}</a></div>
 		<div id="nav_portal"><span class="selected">${rc.getMessage("viewinclude.header.data")}</span> | <a href="${rc.getMessage("viewinclude.header.community.url")}">${rc.getMessage("viewinclude.header.community")}</a></div>
 	</div>
