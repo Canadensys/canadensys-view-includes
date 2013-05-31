@@ -19,7 +19,7 @@
 </#if>
 <#if gaAccount?? && gaAccount?has_content>
 	<meta name="google-site-verification" content="${gaSiteVerification}"/>
-	<script type="text/javascript">
+	<script>
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', '${gaAccount}']);
 	_gaq.push(['_trackPageview']);

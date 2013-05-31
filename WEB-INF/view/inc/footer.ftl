@@ -21,12 +21,12 @@
 <#-- JavaScript handling -->
 <#if (page.javaScriptIncludeList)??>
 	<#list page.javaScriptIncludeList as jsFile>
-<script type="text/javascript" src="${jsFile}"></script>
+<script src="${jsFile}"></script>
 	</#list>
 </#if>
 
 <#if (page.javaScriptSetupCallList)?? || (page.jQueryJavaScriptSetupCallList)??>
-<script type="text/javascript">
+<script>
 <#if (page.javaScriptSetupCallList)??>
 	<#list page.javaScriptSetupCallList as jsCall>
 ${jsCall};
