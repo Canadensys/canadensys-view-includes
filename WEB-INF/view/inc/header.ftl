@@ -4,13 +4,13 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 	<title>${(page.title)!}</title>
 	<link rel="stylesheet" href="http://data.canadensys.net/common/styles/common.css" media="screen"/>
-	<link rel="shortcut icon" href="http://data.canadensys.net/common/images/favicon.png"/>
 <#-- Add additional CSS if needed -->
 <#if (page.cssList)??>
 	<#list page.cssList as css>
 	<link rel="stylesheet" href="${css}" media="screen"/>
 	</#list>
 </#if>
+	<link rel="shortcut icon" href="http://data.canadensys.net/common/images/favicon.png"/>
 <#if (page.prefetchList)??>
 	<#list page.prefetchList as pre>
 	<link rel="dns-prefetch" href="${pre}"/>
