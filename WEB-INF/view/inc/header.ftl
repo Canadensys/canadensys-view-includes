@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="${css}" media="screen"/>
 	</#list>
 </#if>
+	<link rel="stylesheet" href="http://data.canadensys.net/common/styles/print.css" media="print"/>
 	<link rel="shortcut icon" href="http://data.canadensys.net/common/images/favicon.png"/>
 <#if (page.prefetchList)??>
 	<#list page.prefetchList as pre>
