@@ -11,6 +11,12 @@
 	</#list>
 </#if>
 	<link rel="stylesheet" href="http://data.canadensys.net/common/styles/print.css" media="print"/>
+<#-- Add additional Print CSS if needed -->
+<#if (page.cssPrintList)??>
+	<#list page.cssPrintList as css>
+	<link rel="stylesheet" href="${css}" media="print"/>
+	</#list>
+</#if>
 	<link rel="shortcut icon" href="http://data.canadensys.net/common/images/favicon.png"/>
 <#if (page.prefetchList)??>
 	<#list page.prefetchList as pre>
