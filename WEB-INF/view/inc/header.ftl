@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <meta charset="UTF-8">
 	<title>${(page.title)!}</title>
 	<link rel="stylesheet" href="http://data.canadensys.net/common/styles/common.css" media="screen,print"/>
 <#-- Add additional CSS if needed -->
