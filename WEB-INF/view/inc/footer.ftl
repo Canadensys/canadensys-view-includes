@@ -37,8 +37,8 @@ ${jsCall};
 	<#list page.jQueryJavaScriptSetupCallList as jsCall>
 		${jsCall};
 	</#list>
-</#if>
 	});
+</#if>
 </script>
 </#if>
 </body>
