@@ -14,8 +14,10 @@ header.ftl
 
 canadensys-header.ftl
 * URLHelper : reference to net.canadensys.web.FreemarkerURLHelper
+* userMessageKey : key(in the project language resource) pointing to a message to display to the user. This message will be shown on all pages.
 
 footer.ftl
 * page.javaScriptIncludeList : Java Script file(s) to include
 * page.javaScriptSetupCallList : Java Script initialization function(s) to call
 * page.jQueryJavaScriptSetupCallList : Java Script function(s) to call at jQuery initialization (inside $(document).ready(...))
+* footerAdditionalInfoKey : key(in the project language resource) pointing to some text to add in the footer. This is currently limited to one text item.

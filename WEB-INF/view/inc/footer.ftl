@@ -6,6 +6,9 @@
 			<ul>
 				<li><a href="${rc.getMessage("viewinclude.footer.norms.url")}">${rc.getMessage("viewinclude.footer.norms")}</a></li>
 				<li><a href="${rc.getMessage("viewinclude.footer.ipt.url")}">${rc.getMessage("viewinclude.footer.ipt")}</a></li>
+				<#if footerAdditionalInfoKey??>
+				<li>${rc.getMessage(footerAdditionalInfoKey)}</li>
+				</#if>
 			</ul>
 		</div>
 		<div class="footer_section right">
