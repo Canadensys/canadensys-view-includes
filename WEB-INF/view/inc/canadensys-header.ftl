@@ -1,6 +1,8 @@
 <div id="header">
 	<#if userMessageKey??>
-	${rc.getMessage(userMessageKey)}
+		<div id="header_message">
+			${rc.getMessage(userMessageKey)}
+		</div>
 	</#if>
 	<div id="header_content">
 <#-- This is only valid for 2 languages -->
