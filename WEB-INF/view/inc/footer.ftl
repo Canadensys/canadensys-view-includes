@@ -8,7 +8,10 @@
 				<li><a href="${rc.getMessage("viewinclude.footer.ipt.url")}">${rc.getMessage("viewinclude.footer.ipt")}</a></li>
 				<#if footerAdditionalInfoKey??>
 					<#if footerAdditionalInfoParamKey??>
+					<#attempt>
 				<li>${rc.getMessage(footerAdditionalInfoKey,[footerAdditionalInfoParamKey?eval])}</li>
+					<#recover>
+					</#attempt>
 					<#else>
 				<li>${rc.getMessage(footerAdditionalInfoKey)}</li>
 					</#if>
