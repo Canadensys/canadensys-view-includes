@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 	<title>${(page.title)!}</title>
-	<link rel="stylesheet" href="http://data.canadensys.net/common/styles/common.css" media="screen,print"/>
+	<link rel="stylesheet" href="http://data.canadensys.net/common/styles/common-1.0.min.css" media="screen,print"/>
 <#-- Add additional CSS if needed -->
 <#if (page.cssList)??>
 	<#list page.cssList as css>
