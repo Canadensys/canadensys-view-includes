@@ -43,7 +43,7 @@ ${jsCall};
 	</#list>
 </#if>
 <#if (page.jQueryJavaScriptSetupCallList)??>
-	$(document).ready(function() {
+	$(function() {
 	<#list page.jQueryJavaScriptSetupCallList as jsCall>
 		${jsCall};
 	</#list>
