@@ -5,6 +5,11 @@
 	<title>${(page.title)!}</title>
 	<link rel="stylesheet" href="http://data.canadensys.net/common/styles/common-1.0.min.css" media="screen,print"/>
 <#-- Add additional CSS if needed -->
+<#if (page.cssScreenPrintList)??>
+	<#list page.cssScreenPrintList as css>
+	<link rel="stylesheet" href="${css}" media="screen,print"/>
+	</#list>
+</#if>
 <#if (page.cssList)??>
 	<#list page.cssList as css>
 	<link rel="stylesheet" href="${css}" media="screen"/>
