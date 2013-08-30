@@ -7,7 +7,9 @@ The other variables must be sent to the FTL templates by the Java Servlet or set
 
 header.ftl
 * page.title : title to use in <title> tag
-* page.cssList : Freemarker sequence of CSS to include
+* page.cssScreenPrintList : Freemarker sequence of CSS to include as media="screen,print" 
+* page.cssList : Freemarker sequence of CSS to include as media="screen"
+* page.cssPrintList : Freemarker sequence of CSS to include as media="print"
 * page.prefetchList : dns-prefetch and prefetch tags
 * gaAccount : Google Analytics account
 * gaSiteVerification : Google Analytics site verification
@@ -22,3 +24,9 @@ footer.ftl
 * page.jQueryJavaScriptSetupCallList : Java Script function(s) to call at jQuery initialization (inside $(document).ready(...))
 * footerAdditionalInfoKey : key(in the project language resource) pointing to some text to add in the footer. This is currently limited to one text item.
 * footerAdditionalInfoParamKey : name of a variable that would hold a value to be used with `footerAdditionalInfoKey` when this later includes the {0} notation.
+
+global-functions.ftl
+* function formatFileInclude : format a file name for minified and/or versioned files
+
+error/404.ft
+* Canadensys 404 page
