@@ -1,5 +1,7 @@
 canadensys-view-includes
 
+Reusable Freemaker templates and properties files
+
 Freemarker variables
 --------------------
 The page. variables must be set by the calling FTL template.
@@ -23,7 +25,7 @@ footer.ftl
 * page.javaScriptSetupCallList : Java Script initialization function(s) to call
 * page.jQueryJavaScriptSetupCallList : Java Script function(s) to call at jQuery initialization (inside $(document).ready(...))
 * footerAdditionalInfoKey : key(in the project language resource) pointing to some text to add in the footer. This is currently limited to one text item.
-* footerAdditionalInfoParamKey : name of a variable that would hold a value to be used with `footerAdditionalInfoKey` when this later includes the {0} notation.
+* footerAdditionalInfoParamKey : name of a variable that would hold a value to be used with `footerAdditionalInfoKey` when this latter includes the {0} notation.
 
 global-functions.ftl
 * function formatFileInclude : format a file name for minified and/or versioned files
