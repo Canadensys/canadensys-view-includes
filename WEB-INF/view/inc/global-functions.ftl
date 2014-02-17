@@ -12,3 +12,14 @@
 	</#if>
 	<#return formatted>
  </#function>
+ 
+<#macro cssAsset fileName version useMinified>
+	<link rel="stylesheet" href="${rc.getContextUrl("/assets/styles/"+formatFileInclude(fileName,version,useMinified,".css"))}" media="screen,print"/>
+</#macro>
+<#macro jsAsset fileName version useMinified>
+	<script src="${rc.getContextUrl("/assets/js/"+formatFileInclude(fileName,version,useMinified,".js"))}"></script>
+</#macro>
+<#macro jsLibAsset libName>
+	<script src="${rc.getContextUrl("/assets/js/lib/"+libName)}"></script>
+</#macro>
+ 
