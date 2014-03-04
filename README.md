@@ -1,9 +1,7 @@
-canadensys-view-includes
+#Scheduled for removal
 
-*Scheduled for removal*
-Replaced by canadensys-web-core and canadensys-web-theme.
+Replaced by [canadensys-web-core](https://github.com/Canadensys/canadensys-web-core) and [canadensys-web-theme](https://github.com/Canadensys/canadensys-web-theme).
 
-Reusable Freemaker templates and properties files
 
 Freemarker variables
 --------------------
