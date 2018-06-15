@@ -1,4 +1,4 @@
-#Scheduled for removal
+# Deprecated
 
 Replaced by [canadensys-web-core](https://github.com/Canadensys/canadensys-web-core) and [canadensys-web-theme](https://github.com/Canadensys/canadensys-web-theme).
 
